@@ -10,6 +10,8 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@ncwidgets/file-relation": "^0.9.0",
+    "@ncwidgets/id": "^0.9.0",
     "@next/font": "13.1.1",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
@@ -17,6 +19,7 @@
     "@vercel/og": "^0.0.21",
     "date-fns": "^2.29.3",
     "gray-matter": "^4.0.3",
+    "netlify-cms-app": "^2.15.72",
     "next": "13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
