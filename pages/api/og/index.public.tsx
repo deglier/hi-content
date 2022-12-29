@@ -108,8 +108,8 @@ export default async function handler(req: NextRequest) {
         ],
       },
     )
-  } catch (error: any) {
-    console.log(`${error.message}`)
+  } catch (error: unknown) {
+    console.log({ error })
     return new Response(`Failed to generate the image`, {
       status: 500,
     })
