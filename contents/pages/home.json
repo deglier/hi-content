@@ -3,15 +3,18 @@
     "brands": [
       {
         "label": "Amázzoni",
-        "logo": "/uploads/pages/home/brands/amazzoni.png"
+        "logo": "/uploads/pages/home/brands/amazzoni.png",
+        "name": "Amázzoni"
       },
       {
         "label": "+QPRETAS",
-        "logo": "/uploads/pages/home/brands/qpretas.png"
+        "logo": "/uploads/pages/home/brands/qpretas.png",
+        "name": "+ QPRETAS"
       },
       {
         "label": "Corona",
-        "logo": "/uploads/pages/home/brands/corona.png"
+        "logo": "/uploads/pages/home/brands/corona.png",
+        "name": "Corona"
       }
     ],
     "heading": "Somos a plataforma de produção de ***conteúdo*** que vai ***transformar a sua marca***",
