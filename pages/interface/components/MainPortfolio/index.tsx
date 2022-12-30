@@ -50,7 +50,7 @@ function Gallery({ images }: { images: ImageGallery[] }) {
               style={{ backgroundImage: `url('/_next/image?url=${encodeURI(item.src)}&w=20&q=50')` }}
             >
               <div className="absolute inset-0 bg-secondary-base bg-opacity-50" />
-              <Image src={item.src} alt={item.src} fill className="object-contain" />
+              <Image src={item.src} alt={item.src} sizes="14rem" fill className="object-contain" />
             </li>
           ))}
         </ul>
