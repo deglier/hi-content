@@ -23,7 +23,7 @@ export default function DefaultLayout({ metadata, children, settings }: DefaultL
         {children}
       </div>
       <Footer source={settings} />
-      {/* <ModalSimulator /> */}
+      <ModalSimulator />
     </div>
   )
 }
