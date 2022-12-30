@@ -6,6 +6,9 @@ content:
   - type: gallery
     thumbnail: /uploads/works/boah/boah-7073.jpg
     images:
+      - src: /uploads/works/boah/boah-7073.jpg
+        ratioY: 12
+        ratioX: 10
       - src: /uploads/works/boah/boah-6976.jpg
         ratioY: 4
         ratioX: 3
