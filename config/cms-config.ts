@@ -14,8 +14,8 @@ export const config: CmsConfig = {
     : {
         name: 'github',
         branch: 'main',
-        repo: 'deglier/hi-im-content',
-        base_url: 'https://hi-im-content.vercel.app/',
+        repo: 'deglier/hi-content',
+        base_url: 'https://hi-content.vercel.app/',
         auth_endpoint: 'api/auth/',
       },
   load_config_file: false,

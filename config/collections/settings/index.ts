@@ -59,7 +59,7 @@ const settings: CmsCollection = {
   name: 'settings',
   folder: 'contents/site',
   format: 'json',
-  create: true,
+  create: false,
   identifier_field: 'name',
   fields: [
     {
