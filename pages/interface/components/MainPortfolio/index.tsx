@@ -42,7 +42,7 @@ function Gallery({ images }: { images: ImageGallery[] }) {
         thumbnailImageComponent={GalleryImage}
       />
       <noscript>
-        <ul className="flex w-full gap-4 overflow-x-auto whitespace-nowrap py-16 text-neutral-high-base before:inline-block before:p-1 after:inline-block after:p-1 lg:justify-center lg:pb-10 lg:pt-0">
+        <ul className="flex w-full flex-wrap gap-4 overflow-x-auto whitespace-nowrap py-16 text-neutral-high-base before:inline-block before:p-1 after:inline-block after:p-1 lg:justify-center lg:pb-10 lg:pt-0">
           {images.map((item, idx) => (
             <li
               key={idx.toString()}
