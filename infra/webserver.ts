@@ -11,7 +11,7 @@ function isBuildTime() {
 }
 
 function getHost() {
-  let webserverHost = 'https://hi-im-content.vercel.app'
+  let webserverHost = 'https://hi-content.vercel.app'
 
   if (!isLambdaServer()) {
     webserverHost = `https://${process.env.WEBSERVER_HOST}:${process.env.WEBSERVER_PORT}`
@@ -19,10 +19,6 @@ function getHost() {
 
   if (['preview'].includes(process.env.VERCEL_ENV ?? '')) {
     webserverHost = `https://${process.env.VERCEL_URL}`
-  }
-
-  if (isLocalhost()) {
-    webserverHost = `http://${process.env.WEBSERVER_HOST}:${process.env.WEBSERVER_PORT}`
   }
 
   return webserverHost
