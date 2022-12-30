@@ -1,9 +1,8 @@
 import type { CmsConfig } from 'netlify-cms-core'
 
-import { catalog } from '@/config/collections/catalog'
-import { portfolio } from '@/config/collections/portfolio'
-import { settings } from '@/config/collections/settings'
-import { siteContent } from '@/config/collections/site-content'
+import pages from './collections/pages'
+import settings from './collections/settings'
+import works from './collections/works'
 
 const isLocalhost = typeof window !== 'undefined' && window.location.host === 'localhost:3000'
 
@@ -35,9 +34,9 @@ export const config: CmsConfig = {
   },
 
   collections: [
-    siteContent,
-    portfolio,
-    catalog,
+    pages,
+    works,
+    // catalog,
     settings,
     // {
     //   label: "Conteúdo do site",

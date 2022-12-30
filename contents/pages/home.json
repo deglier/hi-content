@@ -1,0 +1,137 @@
+{
+  "about": {
+    "brands": [
+      {
+        "label": "Amázzoni",
+        "logo": "/uploads/pages/home/brands/amazzoni.png"
+      },
+      {
+        "label": "+QPRETAS",
+        "logo": "/uploads/pages/home/brands/qpretas.png"
+      },
+      {
+        "label": "Corona",
+        "logo": "/uploads/pages/home/brands/corona.png"
+      }
+    ],
+    "heading": "Somos a plataforma de produção de ***conteúdo*** que vai ***transformar a sua marca***",
+    "description": "A Hi! surgiu para ***transformar*** a produção de conteúdo da sua marca através de planos de assinatura ou shootings avulsos ***100% personalizados*** para a fase e tamanho do seu negócio.\n\nTe ajudamos ***desde a concepção criativa até a produção de cada ensaio***, garantindo sempre o ***destaque*** do seu produto nas redes sociais, e-commerce, ads e outros canais.\n\nAqui você contará com fotógrafos experts, maquiadores, stylists, estúdio e locações externas, modelos à sua escolha e ***muito mais :)***",
+    "featuredImage": "/assets/img/site-content/home/boah-7147.jpg"
+  },
+  "hero": {
+    "heading": "os ***conteúdos*** que você sempre ***sonhou***",
+    "support": "*Fotos e vídeos que trazem resultados para sua marca, produzidos de uma forma que você nunca viu antes!*",
+    "background": [
+      {
+        "type": "video",
+        "source": "link",
+        "url": "/assets/img/site-content/home/video.mp4",
+        "poster": "/assets/img/site-content/home/poster.webp"
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "Descubra como funciona",
+    "steps": [
+      {
+        "description": "Monte seu plano com base no que a sua marca precisa: nº de sessões, fotos, vídeos, modelos, etc."
+      },
+      {
+        "description": "Recolhemos os itens da sua marca em qualquer lugar do brasil e não cobramos nada por isso"
+      },
+      {
+        "description": "Produzimos os conteúdos com base no moodboard criado por nós e aprovado por você."
+      },
+      {
+        "description": "Te enviamos os conteúdos prontos em até sete dias úteis."
+      }
+    ]
+  },
+  "whatWeOffer": {
+    "services": [
+      {
+        "description": "Envie gratuitamente via correios utilizando a nossa etiqueta de despacho e depois receba os itens no seu endereço.",
+        "type": "essencial",
+        "title": "Coleta e devolução *grátis!*"
+      },
+      {
+        "description": "Pesquisa e orçamento de locações externas para compor o mood do seu conteúdo.",
+        "type": "essencial",
+        "title": "Locação externa"
+      },
+      {
+        "description": "Desenvolvemos um roteiro detalhado de cada conteúdo que será produzido.",
+        "type": "essencial",
+        "title": "Roteiro"
+      },
+      {
+        "description": "Pesquisa e indicação de modelos que combinem com a sua marca. Você escolhe.",
+        "type": "essencial",
+        "title": "Modelo"
+      },
+      {
+        "description": "Criamos um painel de referências visuais para que você visualize como será o resultado do shooting da sua marca.",
+        "type": "essencial",
+        "title": "Mood board"
+      },
+      {
+        "description": "Especialista em preparação de modelos para fotografias de alto nível.",
+        "type": "essencial",
+        "title": "Maquiador (a)"
+      },
+      {
+        "description": "Um estúdio completo com todos os equipamentos necessários para a execução de fotos perfeitas.",
+        "type": "essencial",
+        "title": "Estúdio profissional"
+      },
+      {
+        "description": "Um time responsável por cuidar do set de ponta a ponta.",
+        "type": "essencial",
+        "title": "Produção"
+      },
+      {
+        "description": "Envio dos conteúdos já pós-produzidos; prontos para serem utilizadas onde você quiser.",
+        "type": "opcional",
+        "title": "Fotos prontas pra usar"
+      },
+      {
+        "description": "Vídeos dinâmicos com áudio e motion design para serem postados no story do instagram.",
+        "type": "opcional",
+        "title": "Vídeo para story"
+      },
+      {
+        "description": "Desenvolvemos um roteiro detalhado de cada conteúdo que será produzido.",
+        "type": "opcional",
+        "title": "Produção de cenário"
+      },
+      {
+        "description": "Vídeos dinâmicos com áudio e motion design para serem postados no reels do instagram.",
+        "type": "opcional",
+        "title": "Vídeo para reels"
+      },
+      {
+        "description": "Filmes de até trinta segundos.",
+        "type": "opcional",
+        "title": "Short film"
+      },
+      {
+        "description": "Vídeos dinâmicos com áudio e motion design para serem postados no tiktok.",
+        "type": "opcional",
+        "title": "Vídeo para tiktok"
+      },
+      {
+        "description": "Fotos enviadas com o peso e formato ideal para você utilizar no seu e-commerce.",
+        "type": "opcional",
+        "title": "Otimização de fotos"
+      }
+    ],
+    "title": "O que oferecemos"
+  },
+  "subscription": {
+    "title": "Conteúdos ***incríveis*** para a sua marca e ***flexibilidade*** para o seu bolso!",
+    "description": "Nosso modelo é uma assinatura mensal personalizada para o que sua marca precisa.\nLorem ipsum dolor sit amet consectetur. Penatibus odio pellentesque at ultrices erat blandit amet eros mi. Purus sed diam mattis consectetur. \nPague no cartão de crédito, boleto ou Pix.",
+    "callTitle": "**Precisando apenas de um *shooting avulso?***",
+    "callSupportText": "Você também pode contar com a gente ;)",
+    "featuredImage": "/assets/img/site-content/home/boah-7016.jpg"
+  }
+}
