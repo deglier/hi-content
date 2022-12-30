@@ -1,0 +1,42 @@
+{
+  "name": "settings",
+  "footer": {
+    "paymentInfo": {
+      "displayText": "Formas de pagamento",
+      "items": [
+        {
+          "type": "text",
+          "id": "Zm9vdGVy-stmc12hHy",
+          "displayText": "Cartão de crédito, boleto e pix"
+        }
+      ]
+    },
+    "contactInfo": {
+      "displayText": "Ficou com dúvidas?",
+      "items": [
+        {
+          "type": "tel",
+          "id": "Zm9vdGVy-yvapetFiA",
+          "displayText": "(71) 9.9944-1403"
+        },
+        {
+          "type": "email",
+          "id": "Zm9vdGVy-IxmQZrbLX",
+          "displayText": "contato@hicontent.com.br"
+        }
+      ]
+    },
+    "socialInfo": {
+      "displayText": "Siga a Hi no Instagram",
+      "items": [
+        {
+          "type": "link",
+          "id": "Zm9vdGVy-5pcCk8tkK",
+          "link": "https://www.instagram.com/hi.im.content",
+          "displayText": "@hi.im.content"
+        }
+      ]
+    },
+    "footerText": "HIKE Publicidade e Propaganda LTDS  •  R. José Taboada Vidal, 13, SSA/BA/BR  •  CNPJ: 39.310.887/0001-50"
+  }
+}

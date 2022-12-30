@@ -66,7 +66,7 @@ const settings: CmsCollection = {
       label: 'Configurações',
       name: 'name',
       widget: 'hidden',
-      default: 'configuracoes',
+      default: 'settings',
     },
     {
       label: 'Rodapé',
