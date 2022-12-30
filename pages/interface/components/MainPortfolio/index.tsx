@@ -42,9 +42,14 @@ function Gallery({ images }: { images: ImageGallery[] }) {
         thumbnailImageComponent={GalleryImage}
       />
       <noscript>
-        <ul>
+        <ul className="flex w-full gap-4 overflow-x-auto whitespace-nowrap py-16 text-neutral-high-base before:inline-block before:p-1 after:inline-block after:p-1 lg:justify-center lg:pb-10 lg:pt-0">
           {images.map((item, idx) => (
-            <li key={idx.toString()} className="relative aspect-square h-48 w-48">
+            <li
+              key={idx.toString()}
+              className="group relative flex aspect-square flex-shrink-0 basis-56 cursor-pointer items-center justify-center overflow-hidden rounded-sm border-2 border-primary-base bg-cover bg-no-repeat"
+              style={{ backgroundImage: `url('/_next/image?url=${encodeURI(item.src)}&w=20&q=50')` }}
+            >
+              <div className="absolute inset-0 bg-secondary-base bg-opacity-50" />
               <Image src={item.src} alt={item.src} fill className="object-contain" />
             </li>
           ))}
