@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 
 import { config } from '@/config/cms-config'
+import Head from '@/pages/interface/components/Head'
 
 export default function Admin() {
   useEffect(() => {
@@ -21,4 +22,9 @@ export default function Admin() {
     }
     startCMS()
   }, [])
+  return (
+    <>
+      <Head metadata={{ title: 'Admin' }} />
+    </>
+  )
 }

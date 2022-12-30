@@ -33,13 +33,24 @@ function Gallery({ images }: { images: ImageGallery[] }) {
     height: image.ratioY ?? 4,
   }))
   return (
-    <DynamicGallery
-      images={imagesMapped}
-      enableImageSelection={false}
-      margin={4}
-      rowHeight={200}
-      thumbnailImageComponent={GalleryImage}
-    />
+    <>
+      <DynamicGallery
+        images={imagesMapped}
+        enableImageSelection={false}
+        margin={4}
+        rowHeight={200}
+        thumbnailImageComponent={GalleryImage}
+      />
+      <noscript>
+        <ul>
+          {images.map((item, idx) => (
+            <li key={idx.toString()} className="relative aspect-square h-48 w-48">
+              <Image src={item.src} alt={item.src} fill className="object-contain" />
+            </li>
+          ))}
+        </ul>
+      </noscript>
+    </>
   )
 }
 

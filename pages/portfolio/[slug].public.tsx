@@ -41,7 +41,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const webserverHost = webserver.getHost()
 
   const contentMetadata: Metadata = {
-    title: `Projeto ${work?.frontmatter.title ?? 'Hi!'} · Hi! I'm content!`,
+    title: `Projeto ${work?.frontmatter.title ?? 'Hi!'}`,
     image: `${webserverHost}/api/og?title=${work.frontmatter.title}&thumbnail=${work.frontmatter.content.thumbnail}`,
     url: `${webserverHost}/portfolio/${work?.slug}`,
     publishedTime: work?.frontmatter.date,

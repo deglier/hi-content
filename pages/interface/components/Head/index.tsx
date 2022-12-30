@@ -24,13 +24,59 @@ type HeadProps = {
 
 const webserverHost = webserver.getHost()
 
-export function DefaultHead() {
-  const router = useRouter()
+// export function DefaultHead() {
+//   const router = useRouter()
 
+//   const systemTheme = useMediaQuery('(prefers-color-scheme: dark)')
+//   const favicon = systemTheme ? '/favicon-dark.png' : '/favicon-light.png'
+
+//   const defaultMetadata: Metadata = {
+//     title: `Hi! I'm content!`,
+//     image: `${webserverHost}/default-image-share.png`,
+//     description:
+//       'Fotos e vídeos que trazem resultados para sua marca, produzidos de uma forma que você nunca viu antes!',
+//     url: `${webserverHost}${router.asPath}`,
+//     type: 'website',
+//     noIndex: false,
+//   }
+
+//   const { type, title, description, image, url } = defaultMetadata
+
+//   console.log('DefaultHead')
+//   return (
+//     <NextHead>
+//       <title>{title}</title>
+//       <meta name="title" content={title} key="title" />
+//       <meta name="description" content={description} key="description" />
+//       <meta name="robots" content="index follow" key="robots" />
+
+//       <meta property="og:site_name" content="Hi! I'm content" />
+//       <meta property="og:type" content={type} key="og:type" />
+//       <meta property="og:url" content={url} key="og:url" />
+//       <meta property="og:title" content={title} key="og:title" />
+//       <meta property="og:description" content={description} key="og:description" />
+//       <meta property="og:image" content={image} key="og:image" />
+
+//       <meta property="twitter:card" content="summary_large_image" key="twitter:card" />
+//       <meta property="twitter:url" content={url} key="twitter:url" />
+//       <meta property="twitter:title" content={title} key="twitter:title" />
+//       <meta property="twitter:description" content={description} key="twitter:description" />
+//       <meta property="twitter:image" content={image} key="twitter:image" />
+
+//       <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+//       <link rel="icon" href={favicon} type="image/png" />
+//       <link rel="manifest" href="/manifest.webmanifest" crossOrigin="use-credentials" />
+//       <meta name="mobile-web-app-capable" content="yes" />
+//       <meta name="apple-mobile-web-app-capable" content="yes" />
+//     </NextHead>
+//   )
+// }
+
+export default function Head({ children, metadata }: HeadProps) {
+  const router = useRouter()
   const systemTheme = useMediaQuery('(prefers-color-scheme: dark)')
   const favicon = systemTheme ? '/favicon-dark.png' : '/favicon-light.png'
-
-  const defaultMetadata: Metadata = {
+  const defaultMetadata = {
     title: `Hi! I'm content!`,
     image: `${webserverHost}/default-image-share.png`,
     description:
@@ -39,69 +85,59 @@ export function DefaultHead() {
     type: 'website',
     noIndex: false,
   }
-
-  const { type, title, description, image, url } = defaultMetadata
-
+  const { type, title, description, image, url, noIndex, author, publishedTime, modifiedTime } = (metadata ||
+    {}) as Metadata
   return (
     <NextHead>
-      <title>{title}</title>
-      <meta name="title" content={title} key="title" />
-      <meta name="description" content={description} key="description" />
-      <meta name="robots" content="index follow" key="robots" />
-
-      <meta property="og:site_name" content="Hi! I'm content" />
-      <meta property="og:type" content={type} key="og:type" />
-      <meta property="og:url" content={url} key="og:url" />
-      <meta property="og:title" content={title} key="og:title" />
-      <meta property="og:description" content={description} key="og:description" />
-      <meta property="og:image" content={image} key="og:image" />
-
-      <meta property="twitter:card" content="summary_large_image" key="twitter:card" />
-      <meta property="twitter:url" content={url} key="twitter:url" />
-      <meta property="twitter:title" content={title} key="twitter:title" />
-      <meta property="twitter:description" content={description} key="twitter:description" />
-      <meta property="twitter:image" content={image} key="twitter:image" />
-
-      <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-      <link rel="icon" href={favicon} type="image/png" />
-      <link rel="manifest" href="/manifest.webmanifest" crossOrigin="use-credentials" />
-      <meta name="mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-capable" content="yes" />
-    </NextHead>
-  )
-}
-
-export default function Head({ children, metadata }: HeadProps) {
-  const { type, title, description, image, url, noIndex, author, publishedTime, modifiedTime } =
-    metadata || ({} as Metadata)
-  return (
-    <NextHead>
-      {title && (
+      {title ? (
         <>
           <title>{`${title} · Hi! I'm content!`}</title>
           <meta name="title" content={`${title} · Hi! I'm content!`} key="title" />
           <meta property="og:title" content={`${title} · Hi! I'm content!`} key="og:title" />
           <meta property="twitter:title" content={`${title} · Hi! I'm content!`} key="twitter:title" />
         </>
+      ) : (
+        <>
+          <title>{defaultMetadata.title}</title>
+          <meta name="title" content={defaultMetadata.title} key="title" />
+          <meta property="og:title" content={defaultMetadata.title} key="og:title" />
+          <meta property="twitter:title" content={defaultMetadata.title} key="twitter:title" />
+        </>
       )}
-      {description && (
+      {description ? (
         <>
           <meta name="description" content={description} key="description" />
           <meta property="og:description" content={description} key="og:description" />
           <meta property="twitter:description" content={description} key="twitter:description" />
         </>
+      ) : (
+        <>
+          <meta name="description" content={defaultMetadata.description} key="description" />
+          <meta property="og:description" content={defaultMetadata.description} key="og:description" />
+          <meta property="twitter:description" content={defaultMetadata.description} key="twitter:description" />
+        </>
       )}
-      {url && (
+      {url ? (
         <>
           <meta property="og:url" content={url} key="og:url" />
           <meta property="twitter:url" content={url} key="twitter:url" />
         </>
+      ) : (
+        <>
+          <meta property="og:url" content={defaultMetadata.url} key="og:url" />
+          <meta property="twitter:url" content={defaultMetadata.url} key="twitter:url" />
+        </>
       )}
 
-      {image && (
+      {image ? (
         <>
           <meta property="og:image" content={image} key="og:image" />
           <meta property="twitter:image" content={image} key="twitter:image" />
+        </>
+      ) : (
+        <>
+          <meta property="og:image" content={defaultMetadata.image} key="og:image" />
+          <meta property="twitter:image" content={defaultMetadata.image} key="twitter:image" />
         </>
       )}
 
@@ -113,11 +149,21 @@ export default function Head({ children, metadata }: HeadProps) {
       )}
       {noIndex && <meta name="robots" content="noindex, nofollow" key="robots" />}
 
-      {type && <meta property="og:type" content={type} key="og:type" />}
+      {type ? (
+        <meta property="og:type" content={type} key="og:type" />
+      ) : (
+        <meta property="og:type" content={defaultMetadata.type} key="og:type" />
+      )}
 
       {publishedTime && <meta property="article:published_time" content={publishedTime} />}
 
       {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+
+      <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+      <link rel="icon" href={favicon} type="image/png" />
+      <link rel="manifest" href="/manifest.webmanifest" crossOrigin="use-credentials" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
 
       {children}
     </NextHead>
