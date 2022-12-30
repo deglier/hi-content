@@ -3,7 +3,7 @@ import { ImageResponse } from '@vercel/og'
 import { NextRequest } from 'next/server'
 
 import webserver from '@/infra/webserver'
-import LogoHi from '@/pages/interface/components/graphics/LogoHi'
+import LogoHi from '@/pages/interface/components/graphics/LogoHi/index'
 
 export const config = {
   runtime: 'edge',

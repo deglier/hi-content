@@ -2,24 +2,21 @@
   "about": {
     "brands": [
       {
-        "label": "Amázzoni",
-        "logo": "/uploads/pages/home/brands/amazzoni.png",
+        "logo": "/uploads/pages/home/about/brands/amazzoni.png",
         "name": "Amázzoni"
       },
       {
-        "label": "+QPRETAS",
-        "logo": "/uploads/pages/home/brands/qpretas.png",
+        "logo": "/uploads/pages/home/about/brands/qpretas.png",
         "name": "+ QPRETAS"
       },
       {
-        "label": "Corona",
-        "logo": "/uploads/pages/home/brands/corona.png",
+        "logo": "/uploads/pages/home/about/brands/corona.png",
         "name": "Corona"
       }
     ],
     "heading": "Somos a plataforma de produção de ***conteúdo*** que vai ***transformar a sua marca***",
     "description": "A Hi! surgiu para ***transformar*** a produção de conteúdo da sua marca através de planos de assinatura ou shootings avulsos ***100% personalizados*** para a fase e tamanho do seu negócio.\n\nTe ajudamos ***desde a concepção criativa até a produção de cada ensaio***, garantindo sempre o ***destaque*** do seu produto nas redes sociais, e-commerce, ads e outros canais.\n\nAqui você contará com fotógrafos experts, maquiadores, stylists, estúdio e locações externas, modelos à sua escolha e ***muito mais :)***",
-    "featuredImage": "/assets/img/site-content/home/boah-7147.jpg"
+    "featuredImage": "/uploads/pages/home/about/boah-7147.jpg"
   },
   "hero": {
     "heading": "os ***conteúdos*** que você sempre ***sonhou***",
@@ -28,8 +25,8 @@
       {
         "type": "video",
         "source": "link",
-        "url": "/assets/img/site-content/home/video.mp4",
-        "poster": "/assets/img/site-content/home/poster.webp"
+        "url": "/uploads/pages/home/hero/video.mp4",
+        "poster": "/uploads/pages/home/hero/poster.webp"
       }
     ]
   },
@@ -135,6 +132,6 @@
     "description": "Nosso modelo é uma assinatura mensal personalizada para o que sua marca precisa.\nLorem ipsum dolor sit amet consectetur. Penatibus odio pellentesque at ultrices erat blandit amet eros mi. Purus sed diam mattis consectetur. \nPague no cartão de crédito, boleto ou Pix.",
     "callTitle": "**Precisando apenas de um *shooting avulso?***",
     "callSupportText": "Você também pode contar com a gente ;)",
-    "featuredImage": "/assets/img/site-content/home/boah-7016.jpg"
+    "featuredImage": "/uploads/pages/home/subscription/boah-7016.jpg"
   }
 }

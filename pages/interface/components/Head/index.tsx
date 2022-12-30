@@ -31,12 +31,13 @@ export function DefaultHead() {
   const favicon = systemTheme ? '/favicon-dark.png' : '/favicon-light.png'
 
   const defaultMetadata: Metadata = {
-    title: "Hi! I'm content: os conteúdos que você sempre sonhou",
+    title: `Hi! I'm content!`,
     image: `${webserverHost}/default-image-share.png`,
     description:
       'Fotos e vídeos que trazem resultados para sua marca, produzidos de uma forma que você nunca viu antes!',
     url: `${webserverHost}${router.asPath}`,
     type: 'website',
+    noIndex: false,
   }
 
   const { type, title, description, image, url } = defaultMetadata
@@ -61,7 +62,7 @@ export function DefaultHead() {
       <meta property="twitter:description" content={description} key="twitter:description" />
       <meta property="twitter:image" content={image} key="twitter:image" />
 
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
       <link rel="icon" href={favicon} type="image/png" />
       <link rel="manifest" href="/manifest.webmanifest" crossOrigin="use-credentials" />
       <meta name="mobile-web-app-capable" content="yes" />
@@ -71,16 +72,16 @@ export function DefaultHead() {
 }
 
 export default function Head({ children, metadata }: HeadProps) {
-  if (!metadata) return <></>
-  const { type, title, description, image, url, noIndex, author, publishedTime, modifiedTime } = metadata
+  const { type, title, description, image, url, noIndex, author, publishedTime, modifiedTime } =
+    metadata || ({} as Metadata)
   return (
     <NextHead>
       {title && (
         <>
-          <title>{title}</title>
-          <meta name="title" content={title} key="title" />
-          <meta property="og:title" content={title} key="og:title" />
-          <meta property="twitter:title" content={title} key="twitter:title" />
+          <title>{`${title} · Hi! I'm content!`}</title>
+          <meta name="title" content={`${title} · Hi! I'm content!`} key="title" />
+          <meta property="og:title" content={`${title} · Hi! I'm content!`} key="og:title" />
+          <meta property="twitter:title" content={`${title} · Hi! I'm content!`} key="twitter:title" />
         </>
       )}
       {description && (

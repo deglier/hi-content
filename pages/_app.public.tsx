@@ -13,8 +13,8 @@ const raleway = Raleway({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ModalProvider>
+      <DefaultHead />
       <main className={`${raleway.variable} font-sans`}>
-        <DefaultHead />
         <Component {...pageProps} />
       </main>
     </ModalProvider>

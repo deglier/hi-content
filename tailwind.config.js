@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--font-raleway)', ...fontFamily.sans],
-        highlight: "'SA Yesenin', Comic Sans",
+        highlight: ['var(--font-yesenin)', ...fontFamily.serif],
       },
       spacing: {
         15: '3.75rem',
@@ -56,8 +56,8 @@ module.exports = {
         27: '6.75rem',
       },
       backgroundImage: {
-        hero: "url('/assets/img/noise-overlay.png')",
-        noise: "url('/assets/img/noise-overlay.webp')",
+        hero: "url('/uploads/noise-overlay.png')",
+        noise: "url('/uploads/noise-overlay.webp')",
       },
       aspectRatio: {
         '10/8': '10 / 8',
