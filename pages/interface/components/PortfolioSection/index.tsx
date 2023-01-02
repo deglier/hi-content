@@ -19,6 +19,7 @@ export default function PortfolioSection({ data }: { data: Work[] }) {
       <Image
         src={latestWork.frontmatter.content.thumbnail}
         alt={latestWork.frontmatter.title}
+        sizes="1920vw"
         fill
         className="absolute inset-0 -z-[1] h-full w-full object-cover"
       />
@@ -44,7 +45,7 @@ export default function PortfolioSection({ data }: { data: Work[] }) {
               </Link>
             </div>
           </div>
-          {otherWorks.length && <LatestPortfolioList list={otherWorks} />}
+          <LatestPortfolioList list={otherWorks} />
         </div>
       </div>
     </section>

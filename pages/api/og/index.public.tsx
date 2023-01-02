@@ -7,6 +7,7 @@ import LogoHi from '@/pages/interface/components/graphics/LogoHi/index'
 
 export const config = {
   runtime: 'edge',
+  regions: ['gru1'],
 }
 
 const fontSemiBoldItalic = fetch(new URL('../../../assets/Raleway-BoldItalic.ttf', import.meta.url)).then((res) =>
