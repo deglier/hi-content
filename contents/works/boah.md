@@ -4,7 +4,6 @@ title: BOAH
 tags:
   - Captação
   - Pós_produção
-  - comercial
 category: Look book
 content:
   - type: gallery
