@@ -2,8 +2,7 @@
 date: 2022-12-29 10:41:09
 title: BOAH
 tags:
-  - Captação
-  - Pós_produção
+  - Capta
 category: Look book
 content:
   - type: gallery
